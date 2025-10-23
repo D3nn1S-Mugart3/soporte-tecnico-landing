@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = "+529971136764";
+const WHATSAPP_NUMBER = "+529999999999";
 
 function handleSubmit(e) {
   e.preventDefault();
