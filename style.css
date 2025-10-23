@@ -166,6 +166,11 @@ nav a.cta {
     font-weight: 700;
 }
 
+.btn-style {
+    background: none;
+    border-color: var(--muted);
+}
+
 .hero-right-cards {
     display: flex;
     flex-direction: column;
@@ -203,6 +208,12 @@ nav a.cta {
 /* --- Utilities --- */
 .muted {
     color: var(--muted);
+}
+
+.muted-style {
+    margin-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 10px;
 }
 
 .flex {
@@ -258,4 +269,230 @@ nav a.cta {
 
 .bottom-margin {
     margin-bottom: 8px;
+}
+
+
+/* --- Pricing --- */
+.pricing {
+    display: flex;
+    gap: 14px;
+    margin-top: 22px;
+}
+
+.price {
+    flex: 1;
+    padding: 18px;
+    border-radius: 12px;
+}
+
+.price h4 {
+    margin: 0 0 12px;
+}
+
+.price .amount {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.recommended-price {
+    border-color: var(--accent);
+    background: #0f1724;
+    box-shadow: 0 0 15px rgba(6, 182, 212, 0.2);
+}
+
+.color-price {
+    color: var(--accent);
+}
+
+.margin-price {
+    margin-top: 10px;
+}
+
+/* --- Team ---- */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 22px;
+    margin-bottom: 40px;
+}
+
+.member {
+    padding: 20px;
+    background: var(--card);
+    border-radius: var(--radius);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s
+}
+
+.member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.02);
+}
+
+.photo-placeholder {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(45deg, var(--accent), #7c3aed);
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+    overflow: hidden;
+}
+
+.photo-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.member h3 {
+    margin: 0 0 4px;
+    font-size: 18px
+}
+
+.role {
+    display: inline-block;
+    font-size: 13px;
+    color: var(--accent);
+    background: rgba(6, 182, 212, 0.15);
+    padding: 4px 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.member p {
+    font-size: 14px;
+    color: var(--muted);
+}
+
+.muted-margin-bottom {
+    margin-bottom: 20px;
+}
+
+/* --- Contact --- */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 18px;
+    margin-top: 22px;
+}
+
+.style-margin-1 {
+    margin-bottom: 12px;
+}
+
+.style-margin-2 {
+    margin-bottom: 16px;
+}
+
+.align-center {
+    width: 100%;
+    justify-content: center;
+}
+
+form label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    background: #071323;
+    color: inherit;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.small {
+    font-size: 13px;
+    color: var(--muted);
+}
+
+.text-bottom {
+    margin-bottom: 10px;
+}
+
+.text-center {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.card-direction {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.text-size {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+footer {
+    margin-top: 28px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+/* --- Responsive --- */
+@media (max-width: 900px) {
+    .hero {
+        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-right-cards {
+        width: 100%;
+    }
+
+    .services {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing {
+        flex-direction: column;
+    }
+
+    nav {
+        display: none;
+    }
+}
+
+@media (max-width: 520px) {
+    .services {
+        grid-template-columns: 1fr;
+    }
+
+    .logo {
+        width: 44px;
+        height: 44px;
+    }
+
+    .hero-left h2 {
+        font-size: 24px;
+    }
 }

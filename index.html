@@ -27,7 +27,7 @@
         <nav>
           <a href="#services">Servicios</a><a href="#pricing">Precios</a
           ><a href="#team">Equipo</a
-          ><a href="#contact" class="cta">Contactanos</a>
+          ><a href="#contact" class="cta">Contáctanos</a>
         </nav>
       </header>
 
@@ -44,7 +44,7 @@
               <i class="fas fa-magic"></i>
               Solicitar Servicio Ahora
             </a>
-            <a href="#" class="btn">
+            <a id="waBtn" href="#" class="btn">
               <i class="fab fa-whatsapp"></i>
               Mensaje Rápido
             </a>
@@ -120,6 +120,163 @@
           </div>
         </div>
       </section>
+
+      <section id="pricing">
+        <h2>Planes y Precios Estimados</h2>
+        <div class="pricing">
+          <div class="price card">
+            <h4>Diagnóstico y Optimización</h4>
+            <p class="muted">
+              Revisión completa, limpieza de archivos temporales y optimización
+            </p>
+            <p class="amount margin-price">$350 MXN</p>
+            <small class="muted">
+              Ideal para equipos lentos sin problemas graves.
+            </small>
+          </div>
+          <div class="price card recommended-price">
+            <h4>Servicio Completo (Recomendado)</h4>
+            <p class="muted">
+              Mantenimiento + Formateo e Instalación de SO con respaldo de
+              información
+            </p>
+            <p class="amount color-price margin-price">Desde $600 MXN</p>
+            <small class="muted">
+              Precio varía por respaldo de datos y licencia de software.
+            </small>
+          </div>
+          <div class="price card">
+            <h4>Atención a Domicilio</h4>
+            <p class="muted">Soporte en tu ubicación</p>
+            <p class="amount margin-price">+ $100 -$200 MXN</p>
+            <small class="muted">
+              El costo de traslado depende de la zona. Consulta disponibilidad.
+            </small>
+          </div>
+        </div>
+      </section>
+
+      <section id="team">
+        <h2>Nuestro Equipo Técnico 🤝</h2>
+        <p class="muted muted-margin-bottom">
+          Conoce a las profesionales detrás de cada solución. Tu equipo está en
+          buenas manos.
+        </p>
+        <div class="team-grid">
+          <div class="member">
+            <div class="photo-placeholder"></div>
+            <h3>Maribel C.</h3>
+            <span class="role">T.S.U. en Mantenimiento</span>
+            <p>
+              Experta en diagnóstico de hardware, limpieza interna de equipos,
+              instalación de componentes y formateos rápidos y seguros.
+            </p>
+          </div>
+          <div class="member">
+            <div class="photo-placeholder"></div>
+            <h3>Dennis M.</h3>
+            <span class="role">
+              ING. en Desarrollo de Software Multiplataforma
+            </span>
+            <p>
+              Especializado en el desarrollo de páginas web, aplicaciones
+              móviles y aplicaciones web interactivas, con enfoque en diseño
+              funcional, experiencia del usuario y rendimiento optimo.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>¿Necesitas Ayuda? Contáctanos</h2>
+        <div class="contact-grid">
+          <div class="card">
+            <p class="small text-bottom">
+              Envía unu mensaje describiendo tu problema y te responderemos con
+              un presupuesto aproximado y opciones de horario.
+            </p>
+            <form onsubmit="handleSubmit(event)">
+              <div class="style-margin-1">
+                <label for="name">Nombre Completo</label
+                ><input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Tu Nombre"
+                />
+              </div>
+              <div class="style-margin-1">
+                <label for="email">Correo Electrónico</label
+                ><input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="ejemplo@gmail.com"
+                />
+              </div>
+              <div class="style-margin-1">
+                <label for="service">Servicio de Interés</label>
+                <select name="service" id="service" required>
+                  <option value="Mantenimiento y Optimización">
+                    Mantenimiento y Optimización
+                  </option>
+                  <option value="Formateo e Intalación de SO">
+                    Formateo e Intalación de SO
+                  </option>
+                  <option value="Eliminación de Virus">
+                    Eliminación de Virus
+                  </option>
+                  <option value="Otro Servicio">
+                    Otro (Especificar en mensaje)
+                  </option>
+                </select>
+              </div>
+              <div class="style-margin-2">
+                <label for="message">Describe tu Problema/Necesidad</label
+                ><textarea
+                  name="message"
+                  id="message"
+                  required
+                  placeholder="Mi laptop está muy lenta..."
+                ></textarea>
+              </div>
+              <button type="submit" class="btn primary align-center">
+                <i class="fas fa-paper-plane"></i> Enviar Solicitud
+              </button>
+              <p class="small text-center">
+                Nos pondremos en contacto contigo lo antes posible.
+              </p>
+            </form>
+          </div>
+          <div class="card card-direction">
+            <p class="text-size">Datos de Contacto Directo</p>
+            <!-- Añadir numero telefonico -->
+            <a href="tel:+529971136764" class="btn btn-style">
+              <i class="fas fa-phone"></i>
+              Llamanos: 9971136764
+            </a>
+            <!-- Agregar correo -->
+            <a href="email:dennis.mugarte05gmail.com" class="btn btn-style">
+              <i class="fas fa-envelope"></i>
+              Escribenos: dennis.mugarte05gmail.com
+            </a>
+            <p class="muted muted-style">
+              Horario de Atención: <br />
+              Lunes a Viernes: 9:00 a.m. - 7:00 p.m.
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
+    <footer>
+      <p>
+        &copy; <span id="year"></span> Servicios de Soporte. Todos los derechos
+        reservados.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
