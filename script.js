@@ -50,7 +50,7 @@ function initializeContactLinks() {
     )}?text=${encodeURIComponent(CONTACT_INFO.A.message)}`;
   }
 
-  const mailtoA = document.getElementById("mailtoA");
+  const mailtoA = document.getElementById("mailToA");
   if (mailtoA) {
     mailtoA.href = `mailto:${CONTACT_INFO.A.email}`;
   }
@@ -63,7 +63,7 @@ function initializeContactLinks() {
     )}?text=${encodeURIComponent(CONTACT_INFO.B.message)}`;
   }
 
-  const mailtoB = document.getElementById("mailtoB");
+  const mailtoB = document.getElementById("mailToB");
   if (mailtoB) {
     mailtoB.href = `mailto:${CONTACT_INFO.B.email}`;
   }
