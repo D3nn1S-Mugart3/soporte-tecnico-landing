@@ -57,7 +57,7 @@ function initializeContactLinks() {
 
   const waBtnBCard = document.getElementById("waBtnBCard");
   if (waBtnBCard) {
-    waBtnACard.href = `https://wa.me/${CONTACT_INFO.B.phone.replace(
+    waBtnBCard.href = `https://wa.me/${CONTACT_INFO.B.phone.replace(
       /[^0-9]/g,
       ""
     )}?text=${encodeURIComponent(CONTACT_INFO.B.message)}`;
