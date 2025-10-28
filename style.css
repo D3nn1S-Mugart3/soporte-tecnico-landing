@@ -271,7 +271,6 @@ nav a.cta {
     margin-bottom: 8px;
 }
 
-
 /* --- Pricing --- */
 .pricing {
     display: flex;
@@ -455,6 +454,7 @@ footer {
 
 /* --- Responsive --- */
 @media (max-width: 900px) {
+
     .hero {
         grid-template-columns: 1fr;
         display: flex;
@@ -465,12 +465,30 @@ footer {
         width: 100%;
     }
 
+    .btn {
+        padding: 10px 14px;
+        font-size: 13px;
+        flex-grow: 1;
+    }
+
     .services {
         grid-template-columns: repeat(2, 1fr);
     }
 
     .contact-grid {
         grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 16px;
+    }
+
+    .style-margin-1 {
+        margin-bottom: 10px;
+    }
+
+    .style-margin-2 {
+        margin-bottom: 12px;
     }
 
     .pricing {
@@ -480,6 +498,7 @@ footer {
     nav {
         display: none;
     }
+
 }
 
 @media (max-width: 520px) {
@@ -494,5 +513,23 @@ footer {
 
     .hero-left h2 {
         font-size: 24px;
+    }
+
+    .container {
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    .card {
+        padding: 14px;
+    }
+
+    .btn-style {
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+
+    .card-direction {
+        gap: 8px;
     }
 }
