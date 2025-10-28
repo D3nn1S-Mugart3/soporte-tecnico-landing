@@ -65,7 +65,7 @@ function initializeContactLinks() {
 
   const mailtoB = document.getElementById("mailtoB");
   if (mailtoB) {
-    mailtoA.href = `mailto:${CONTACT_INFO.B.email}`;
+    mailtoB.href = `mailto:${CONTACT_INFO.B.email}`;
   }
 }
 
